@@ -14,5 +14,30 @@ Designed so you can create beautiful interfaces **with the least effort possible
 ## 📥 Installation
 
 ```lua
-local CandyUI = loadstring(game:HttpGet(""))()
+local CandyUI = loadstring(game:HttpGet("https://github.com/sobredosisxtco/CandyUI/raw/refs/heads/main/src"))()
 ```
+## 🚀 Basic Example
+
+```lua
+local Window = CandyUI:CreateWindow({
+    Title = "My CandyUI"
+})
+
+local Tab = Window:CreateTab({
+    Name = "Home"
+})
+
+Tab:AddLabel({
+    Text = "Welcome to CandyUI! 🍬"
+})
+
+Tab:AddButton({
+    Name = "Click me",
+    Desc = "This button has a description",
+    Callback = function()
+        print("Button pressed!")
+    end
+})
+```
+
+Made with ❤️ by @sobredosisxtco
